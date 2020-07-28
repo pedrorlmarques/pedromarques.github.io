@@ -1,16 +1,16 @@
----
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Who am I?
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+**Hello,**
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Thanks for visiting my blog! 
+My name is Pedro Marques I'm working as Java Developer for 5 years.
+Programming is also my hobby.
+I love Spring Framework, so all my post will be around the Spring and Java Ecosystem.
+I like to learn new technologies and be up-to-date with the latest trends.
 
-What else do you need?
+I decided to create this blog to have some fun and also to share my knowledge here in a way that everyone can understand.
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+You may want to contact me you can [email me](mailto:pedrorlmarques@gmail.com) or find me in [LinkedIn](https://pt.linkedin.com/public-profile/in/pedro-marques-a61b959a).
