@@ -11,3 +11,7 @@ ehthumbs.db
 Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
+*.iml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
