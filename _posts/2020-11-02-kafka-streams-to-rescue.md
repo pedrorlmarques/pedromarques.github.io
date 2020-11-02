@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kaka Streas to Rescue
+title: Kaka Streams to Rescue
 subtitle: Success case
 tags: [kafka, kafka streams]
 comments: true
