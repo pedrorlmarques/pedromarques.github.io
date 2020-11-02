@@ -9,7 +9,7 @@ subtitle: Who am I?
 Thanks for visiting my blog! 
 My name is Pedro Marques I'm working as Java Developer for 5 years.
 Programming is also my hobby.
-I love Spring Framework, so all my post will be around the Spring and Java Ecosystem.
+I love Spring Framework, so all my post will be around the Spring, Kafka and Java Ecosystem.
 I like to learn new technologies and be up-to-date with the latest trends.
 
 I decided to create this blog to have some fun and also to share my knowledge here in a way that everyone can understand.
