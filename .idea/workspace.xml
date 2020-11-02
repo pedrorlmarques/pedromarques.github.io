@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="672d6e6d-d8c8-41d6-95e1-0f004971db1f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/_posts/2020-11-02-kafka-streams-to-rescue.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-11-02-kafka-streams-to-rescue.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/workflow-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Workflow-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/workflow-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/Workflow-4.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jjS6qkKXaISP6EMZBbb8brLIPm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$/assets/img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="672d6e6d-d8c8-41d6-95e1-0f004971db1f" name="Default Changelist" comment="" />
+      <created>1604315836964</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604315836964</updated>
+      <workItem from="1604315838317" duration="645000" />
+      <workItem from="1604316751905" duration="118000" />
+      <workItem from="1604316890987" duration="1632000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1451" y="257" key="SettingsEditor" timestamp="1604316878939">
+      <screen x="-1920" y="23" width="1920" height="1177" />
+    </state>
+    <state x="-1451" y="239" key="SettingsEditor/-1920.0.1920.1200/0.23.1680.976@-1920.0.1920.1200" timestamp="1604316691212" />
+    <state x="-1451" y="257" key="SettingsEditor/-1920.23.1920.1177/0.23.1680.976@-1920.23.1920.1177" timestamp="1604316878939" />
+    <state x="-1253" y="355" width="586" height="490" key="find.popup" timestamp="1604317938708">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state x="-1253" y="355" width="586" height="490" key="find.popup/-1920.0.1920.1200/0.0.1680.1050@-1920.0.1920.1200" timestamp="1604317938708" />
+  </component>
+</project>
