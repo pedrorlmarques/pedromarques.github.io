@@ -25,6 +25,7 @@ Before a product activation, a message arrives to our backend service and we hav
 
 
 ![alt text](/assets/img/Workflow-1.png "Product Activation Workflow"){: .mx-auto.d-block :}
+**Figure-1 - Product Activation Workflow.**
 
 Now that we understand where the messages came from, we can now start to explain what the requirement was.
 
@@ -33,6 +34,8 @@ Now that we understand where the messages came from, we can now start to explain
 The requirement is, “Once a product activation message arrives to service A, it should send the message to service B and then service B should make a REST call to an external service to get all information. Remarks: You can only call the external service one time for each product activation message.”.
 
 ![alt text](/assets/img/Workflow-2.png "Workflow once a product activation arrives"){: .mx-auto.d-block :}
+
+**Figure-2 – Workflow once a product activation arrives.**
 
  
 ## Problem
@@ -50,6 +53,8 @@ We started to evaluate this new information, and we came up with a naïve approa
 - “Okay, so we know that the product information message triggers the product activation workflow which means that we will always receive the product information first and the product activation after, so this is easy. Let’s start consuming messages from the product information and from product activation and store them in a database. If we receive a product activation, we should check if we already received a product information message. If so, we send the notification message to service B and if not, we store in the database and wait for …”
 
 ![alt text](/assets/img/Workflow-3.png "Workflow of consuming two topics and storing them in a database"){: .mx-auto.d-block :}
+**Figure-3 – Workflow of consuming two topics and storing them in a database.**
+
 
 When we started to implement this solution, we started to find a lot of problems that in the beginning we weren’t aware of.
 
@@ -97,12 +102,14 @@ So a stream processor is a node in the processor topology, it represents a proce
 ## Real Solution
 
 ![alt text](/assets/img/Workflow-4.png "Workflow consuming two topics using Kafka Streams"){: .mx-auto.d-block :}
+**Figure-4 – Workflow consuming two topics using Kafka Streams.**
 
 Before we started to implement this solution, we checked the topics specification. Both topics were marked as **compacted** and both had the same number of partitions. Having the **same number of partitions** means that they are **co-partitioned.**
 
 The next step was to define to the topology.
 
 ![alt text](/assets/img/join_messge.png "Stream Topology created"){: .mx-auto.d-block :}
+**Figure-6 – Stream Topology created.**
 
 The topology is composed by **2 source processors and 1 sink processor.**
 
@@ -120,7 +127,7 @@ Having all this information the solution was to straight forward.
 
 ```java
 Properties properties = new Properties();
-properties.put(StreamsConfig.APPLICATION_ID_CONFIG, "streams-starter-app");
+properties.put(StreamsConfig.APPLICATION_ID_CONFIG, "streams-app");
 properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
 properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
 properties.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
@@ -139,7 +146,7 @@ var join = productActivation.join(productInformation, (pA, pI) -> "PA: " + pA + 
 join.toStream().to("activation-information ", Produced.with(Serdes.String(), Serdes.String()));
 ```
 
-##Conclusion
+## Conclusion
 
 At the beginning, we started with a naïve approach which gave us several problems to consider. Luckily, this was a typical use case where Kafka Streams fits very well. Also, since both topics were co-partitioned, otherwise the join wouldn’t be doable and the solution could fail, and both were compacted.
 
