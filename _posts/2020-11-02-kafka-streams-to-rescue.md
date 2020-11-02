@@ -146,6 +146,8 @@ var join = productActivation.join(productInformation, (pA, pI) -> "PA: " + pA + 
 join.toStream().to("activation-information ", Produced.with(Serdes.String(), Serdes.String()));
 ```
 
+<br>
+
 ## Conclusion
 
 At the beginning, we started with a naïve approach which gave us several problems to consider. Luckily, this was a typical use case where Kafka Streams fits very well. Also, since both topics were co-partitioned, otherwise the join wouldn’t be doable and the solution could fail, and both were compacted.
