@@ -150,7 +150,7 @@ join.toStream().to("activation-information ", Produced.with(Serdes.String(), Ser
 
 ## Conclusion
 
-At the beginning, we started with a naïve approach which gave us several problems to consider. Luckily, this was a typical use case where Kafka Streams fits very well. Also, since both topics were co-partitioned, otherwise the join wouldn’t be doable and the solution could fail, and both were compacted.
+At the beginning, we started with a naïve approach which gave us several problems to consider. Luckily, this was a typical use case where Kafka Streams fits very well. Also, both topics were co-partitioned, otherwise the join wouldn’t be doable and the solution could fail, and both were compacted.
 
 With this solution it was possible to guarantee that the Product Information is received before the Product Activation. Whereas when we had the database, the time between checking if the message is present and actually storing it created a gap where this assertion wasn’t valid. Additionally, we went from “at least once” to “exactly once”.
 
